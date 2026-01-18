@@ -1,0 +1,29 @@
+# 示例数据库配置（用于 V5 系列 db 转录接口）
+# 将此文件复制为 my_db.conf 并填入真实值，或通过 --db-config 指定路径
+
+# 通用配置
+database_type = sqlite   # 可选: sqlite | postgresql | mysql | none
+
+# sqlite 示例（只需指定文件路径）
+[sqlite]
+path = /var/lib/enhistory/enhistory.db
+
+# postgresql 示例
+[postgresql]
+host = 127.0.0.1
+port = 5432
+user = enhistory_user
+password = replace_with_secure_password
+database = enhistory_db
+
+# mysql 示例
+[mysql]
+host = 127.0.0.1
+port = 3306
+user = enhistory_user
+password = replace_with_secure_password
+database = enhistory_db
+
+# 其他提示:
+# - 确保运行安装脚本的用户/进程对数据库有写权限。
+# - 若使用 sqlite，请保证目录可写并定期备份数据库文件。
