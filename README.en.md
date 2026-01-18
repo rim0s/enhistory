@@ -1,3 +1,5 @@
+[English](README.en.md) / [中文](README.md)
+
 # Enhistory — Linux shell history enhancer
 
 This project aims to improve Linux shell history behavior, addressing incomplete or missing history entries caused by SSH disconnects or abrupt terminal closures, and preparing for later transcription of history into databases. The repository contains multiple version directories (V1..V5_RC3); each implements and deploys features at different maturity levels.
